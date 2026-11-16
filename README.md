@@ -24,13 +24,9 @@ Create `scripts/`, `references/`, or `assets/` only when a skill uses them.
 
 ## Skills directory
 
-No skills have been added yet.
+- [`skills/code-commenting/`](skills/code-commenting/) — Write, review, improve, and remove comments that explain why, not what.
 
-When you add one, list it here as a single line: the skill folder, then a short description of what it does and when to use it.
-
-```markdown
-- [`skills/skill-name/`](skills/skill-name/) — What the skill does and when to use it.
-```
+Add the next skill as one line in the same form: the skill folder, then what it does and when to use it.
 
 ## Usage
 
@@ -41,6 +37,6 @@ When you add one, list it here as a single line: the skill folder, then a short 
 5. Add `scripts/`, `references/`, or `assets/` only for files that `SKILL.md` references.
 6. Add a line for the skill in the directory above.
 
-Agents that follow the standard load any directory that contains `SKILL.md`. The template is named `SKILL-template.md` so it is not discovered as a skill.
+A skill is a directory that contains `SKILL.md`. Cursor and Claude Code load skills from their own discovery paths, not from this `skills/` directory directly. Each skill README has the install steps. The template is named `SKILL-template.md` so it is not discovered as a skill.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add and maintain skills.
